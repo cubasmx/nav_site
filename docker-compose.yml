@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  nav_site:
+    build: .
+    container_name: nav_site_container
+    ports:
+      - "8080:80"
+    restart: unless-stopped
