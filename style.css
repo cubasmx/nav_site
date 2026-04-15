@@ -159,12 +159,16 @@ header p {
 }
 
 .nav-item .icon {
-    font-size: 1.25rem;
-    transition: transform 0.3s ease;
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
 }
 
 .nav-item:hover .icon {
-    transform: scale(1.1);
+    transform: scale(1.15) rotate(-5deg);
+    filter: drop-shadow(0 4px 8px rgba(56, 189, 248, 0.4));
 }
 
 @keyframes fadeInDown {
